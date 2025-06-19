@@ -8,8 +8,9 @@ class HomeController
 {
     public function index()
     {
-        $model = new Home();
-        $homeData = $model->get(); 
-        include __DIR__ . '/../Views/home.php'; 
+        $homeModel = new Home();
+        $homeData = $homeModel->get();
+
+        include __DIR__ . '/../Views/home.php';
     }
 }

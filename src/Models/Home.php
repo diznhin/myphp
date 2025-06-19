@@ -20,7 +20,6 @@ class Home
         $data = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($data) {
-            // Giải mã chuỗi JSON sang mảng PHP
             $data['typewriter_words'] = json_decode($data['typewriter_words'], true);
         }
 
